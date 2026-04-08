@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support | Mynta</title>
+<meta name="description" content="Get help with Mynta. Report bugs, request features, or ask questions.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233DD9A8'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='62' fill='white'%3EM%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --mint: #3DD9A8;
+  --forest: #2B5547;
+  --bg: #0D2218;
+  --text: rgba(255,255,255,0.82);
+  --text-dim: rgba(255,255,255,0.42);
+  --card: rgba(61,217,168,0.04);
+  --border: rgba(61,217,168,0.08);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--bg); color:var(--text);
+  font-family:'DM Sans',-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+body::before {
+  content:''; position:fixed; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at 30% 0%,rgba(61,217,168,0.06) 0%,transparent 50%);
+}
+
+nav {
+  padding:20px 32px; display:flex; justify-content:space-between; align-items:center;
+  border-bottom:1px solid var(--border);
+}
+.nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff; }
+.nav-icon {
+  width:36px; height:36px; background:var(--mint); border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Outfit',sans-serif; font-weight:800; font-size:18px; color:#fff;
+}
+.nav-name { font-family:'Outfit',sans-serif; font-weight:700; font-size:20px; }
+nav a.back { color:var(--text-dim); text-decoration:none; font-size:14px; }
+nav a.back:hover { color:var(--mint); }
+
+.page {
+  max-width:600px; margin:0 auto; padding:60px 24px 100px;
+  position:relative; z-index:1;
+}
+
+h1 {
+  font-family:'Outfit',sans-serif; font-weight:800;
+  font-size:clamp(36px,6vw,52px); color:#fff; letter-spacing:-1px;
+  margin-bottom:8px;
+}
+.subtitle { font-size:18px; color:var(--text-dim); margin-bottom:48px; line-height:1.6; }
+
+.card {
+  background:var(--card); border:1px solid var(--border);
+  border-radius:20px; padding:32px 28px; margin-bottom:24px;
+  transition: border-color 0.3s;
+}
+.card:hover { border-color:rgba(61,217,168,0.2); }
+.card-icon { font-size:28px; margin-bottom:14px; }
+.card h3 {
+  font-family:'Outfit',sans-serif; font-weight:700;
+  font-size:20px; color:#fff; margin-bottom:10px;
+}
+.card p { font-size:15px; line-height:1.7; color:var(--text-dim); margin-bottom:16px; }
+.card a {
+  color:var(--mint); text-decoration:none; font-weight:600; font-size:15px;
+}
+.card a:hover { text-decoration:underline; }
+
+.faq { margin-top:48px; }
+.faq h2 {
+  font-family:'Outfit',sans-serif; font-weight:700;
+  font-size:24px; color:#fff; margin-bottom:24px;
+}
+.faq-item { margin-bottom:24px; }
+.faq-item h4 {
+  font-family:'Outfit',sans-serif; font-weight:600;
+  font-size:17px; color:#fff; margin-bottom:8px;
+}
+.faq-item p { font-size:15px; line-height:1.7; color:var(--text-dim); }
+
+footer {
+  padding:32px 24px; text-align:center;
+  border-top:1px solid var(--border);
+  font-size:13px; color:var(--text-dim);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-icon">M</div>
+    <div class="nav-name">Mynta</div>
+  </a>
+  <a href="/" class="back">← Back to home</a>
+</nav>
+
+<div class="page">
+  <h1>Support</h1>
+  <p class="subtitle">Have a question, found a bug, or want to suggest a feature? I'm Leon, the solo developer behind Mynta, and I read every message.</p>
+
+  <div class="card">
+    <div class="card-icon">📧</div>
+    <h3>Email us</h3>
+    <p>The best way to reach me. I typically respond within 24 hours.</p>
+    <a href="mailto:hello@mynta.finance">hello@mynta.finance</a>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">💡</div>
+    <h3>Feature requests</h3>
+    <p>Have an idea that would make Mynta better? I'd love to hear it. Use the "Send Feedback" button inside the app, or email me directly.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">🐛</div>
+    <h3>Report a bug</h3>
+    <p>If something isn't working right, please include what you were doing when it happened and your device model. Screenshots help a lot.</p>
+    <a href="mailto:hello@mynta.finance?subject=Bug Report">Report a bug</a>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h4>Is Mynta really free?</h4>
+      <p>Yes. The free version includes expense logging, budgets, savings goals, recurring transactions, and full history. VIP unlocks extra features like Spending Trends, Smart Sort, and multi-filter search.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Where is my data stored?</h4>
+      <p>On your device only. We don't have servers that store your financial data. If you delete the app, your data is gone. We can't recover it. Cloud backup via iCloud/Google Drive is coming in a future update.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Can I sync between devices?</h4>
+      <p>Not yet. This is planned for a future update. Your data currently lives on one device.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do I cancel my VIP subscription?</h4>
+      <p>Subscriptions are managed through Apple. Go to Settings → your Apple ID → Subscriptions → Mynta → Cancel. Lifetime purchases don't require cancellation.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>I lost my data after reinstalling. Can you help?</h4>
+      <p>Unfortunately, since all data is stored locally on your device, we cannot recover it after the app is deleted. We recommend waiting for the cloud backup feature in a future update before reinstalling.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Mynta by Leon Thong. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
