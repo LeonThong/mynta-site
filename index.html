@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mynta | Clarity over your money</title>
-<meta name="description" content="Track expenses in seconds. No bank linking, no data collection, no ads. Fast, private budgeting built by an indie developer in Singapore.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233DD9A8'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='62' fill='white'%3EM%3C/text%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<meta name="description" content="Track expenses in seconds. No bank linking, no data selling, no ads. Fast, private budgeting built by an indie developer in Singapore.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjMTFDNjhBIiBkPSJNMCAwTDEwMjQgMEwxMDI0IDEwMjRMMCAxMDI0TDAgMFoiLz48cGF0aCBmaWxsPSIjRkVGRUZFIiBkPSJNMzI5LjExMSA2NTYuMzIxQzMwOS42NiA2MjQuMDk2IDMxMC4xMSA1NjcuNDQ2IDMyMC4wMzUgNTMyLjIyM0MzNjYuNTM1IDM2Ny4xOTcgNTM5LjQ1MiAyNzguNDYgNjk3LjI1NCAyNTEuMzVDNzE1LjI0MiAyNDguMjYgNzMyLjUxMSAyNDYuMTIxIDc1MC4zNzQgMjQzLjk0OEM3NTIuMDU2IDI1NC4wMDYgNzUyLjg4NiAyNjQuMjQyIDc1My44MjQgMjc0LjM5MUM3NTUuODYyIDI5Ni40MjMgNzU3LjAxNyAzMTguMDk2IDc1Ni42NTEgMzQwLjIyN0M3NTUuMDM3IDQzNy43MjUgNzMxLjkzMSA1MjguMDY0IDY3NC43IDYwOC4xMDFDNjY0Ljg3IDYyMS44NDggNjM1LjgyNyA2NTguMDAxIDYxOS4xMjEgNjYwLjg0MUM2MTUuMzkxIDY2MS40NzUgNjExLjYxOSA2NjAuODY2IDYwOC41ODUgNjU4LjUxNEM1OTcuMzk1IDY0OS44MzggNTk0LjEyMiA2MjEuNzY5IDU5Mi43NTQgNjA4LjAxNEM1ODQuNTQgNTI1LjM2MSA2MTUuNzY2IDQwNC4yODMgNjY5LjA3MyAzMzkuNTI2QzY3Ny42MjUgMzI5LjEzNyA2ODcuMjY1IDMxNy40ODMgNjk3LjkxNyAzMDkuMTlMNjk3LjM2IDMwNy42MkM2MjUuMjg2IDM1Ni4yMjMgNTU2LjUwNCA0MzYuMzg3IDUxMC4yNTQgNTA5LjQ0QzQ5Ni4xMDIgNTMyLjA4NSA0ODIuOTExIDU1NS4zMTcgNDcwLjcxNSA1NzkuMDcyQzQ1NS41NDIgNTMxLjQxNyA0NTkuOTMxIDQ4MS42MTQgNDc0LjA4NiA0MzQuMzg4QzQzOS40NzQgNDYwLjczMyA0MDkuMzA4IDUwMi43NjYgMzkxLjg3OSA1NDIuMzE3QzM4NC41MzggNTU4Ljk3NSAzNzkuMTAxIDU3NS45ODcgMzcyLjIyOCA1OTIuNjQ2QzM2My4zODYgNjE0LjA3MyAzNDcuMjA2IDY0Mi4wMDkgMzI5LjExMSA2NTYuMzIxWiIvPjxwYXRoIGZpbGw9IiM1NkQzQUYiIGQ9Ik02OTcuMzYgMzA3LjYyQzcwMC40OTYgMzA1LjI4NSA3MDIuMzk3IDMwMy45OTcgNzA1Ljc2MiAzMDIuMDE3QzcwMy4wNzggMzA0LjYwNiA3MDAuNzcyIDMwNi44MDMgNjk3LjkxNyAzMDkuMTlMNjk3LjM2IDMwNy42MloiLz48cGF0aCBmaWxsPSIjRkVGRUZFIiBkPSJNNTkxLjM0MSA0MzguMzk5QzU5MS42MDMgNDQwLjU5NyA1ODUuNjAxIDQ1NC4yOTkgNTg0LjI5OCA0NTcuMzQyQzU1NS42MTcgNTI0LjMyNyA1NDMuNDc3IDYyOC4wMzMgNTgxLjcxOCA2OTMuMjI1QzU3MC4zMTYgNzAwLjM3OCA1NTguNzA1IDcwNi45NjMgNTQ2LjUyNyA3MTIuNzVDNDk0LjU2OCA3MzcuNDM5IDQzMC43NjQgNzQzLjU3NiAzNzguNzA0IDcxNS43OTRDMzczLjY3NyA3MTMuMTEyIDM2OC44MjggNzEwLjA0MiAzNjMuODI0IDcwNy4yOUMzNTkuNDU2IDcxMy42MzUgMzQzLjk5NiA3MjguMTkxIDMzNy41ODggNzM0Ljc5NEwzMTIuMjQzIDc2MS4wMzlDMzA3LjQ3OCA3NjUuOTI5IDMwMi41NCA3NzEuMTg3IDI5Ny40MDEgNzc1LjY0M0MyOTMuMzY1IDc3OS4xNDIgMjg5Ljc3NiA3ODEuMDU4IDI4NC4yMTIgNzgwLjM4MkMyODAuMjI5IDc3OS44OTQgMjc2LjYyNSA3NzcuNzgxIDI3NC4yNTMgNzc0LjU0NUMyNzEuNjg3IDc3MS4wMzYgMjcwLjY1IDc2Ni42MzkgMjcxLjM3NyA3NjIuMzU0QzI3Mi40OTQgNzU1LjQ2OCAyNzYuNjA5IDc1Mi42NiAyODEuNzUgNzQ4Ljk5OEMyOTAuNDU0IDc0Mi44NTQgMjk5Ljc2NiA3MzUuMzMxIDMwOC4wNzcgNzI4LjgwNEMzNTAuNzE0IDY5NS4zMTggMzg3LjM0OCA2NTguMTc2IDQwNC43MyA2MDUuNjQ5QzQxMi4xNyA1ODMuMTY2IDQxOS4wOTYgNTU2LjEzIDQzMC40ODMgNTM1LjQwOEM0MzAuNDk4IDU0Mi4xIDQzMC44MDggNTQ4Ljc4OCA0MzEuNDE1IDU1NS40NTJDNDMzLjQ2NCA1NzcuNzExIDQ0Mi4yMzggNjA5Ljk4NCA0NTkuMTQ1IDYyNS44MDFDNDc1Ljk3NCA2NDEuNTQ0IDQ4OS44MTYgNjExLjAxNyA0OTYuMzUxIDU5OS42NjhDNTA0LjY1OSA1ODUuMTY5IDUxMi43NTMgNTcwLjU0OCA1MjAuNjMxIDU1NS44MTFDNTMyLjg3MyA1MzMuMTM0IDU0NS45MDYgNTExLjA5NyA1NTguOTAyIDQ4OC44NDlDNTY4Ljg1NiA0NzEuODEgNTc5LjYwOCA0NTQuMjk4IDU5MS4zNDEgNDM4LjM5OVoiLz48L3N2Zz4K">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
 :root {
   --mint: #3DD9A8;
-  --mint-dim: rgba(61,217,168,0.15);
+  --mint-bright: #36C996;
   --forest: #2B5547;
-  --forest-deep: #1A3329;
-  --bg: #0D2218;
-  --text: rgba(255,255,255,0.85);
-  --text-dim: rgba(255,255,255,0.45);
+  --forest-deep: #0A1F16;
+  --bg: #0A1F16;
+  --text: rgba(255,255,255,0.86);
+  --text-dim: rgba(255,255,255,0.5);
+  --border: rgba(61,217,168,0.1);
+  --card: rgba(61,217,168,0.045);
 }
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -28,143 +30,168 @@ body {
   overflow-x: hidden;
 }
 body::before {
-  content:''; position:fixed; inset:0; pointer-events:none;
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:0;
   background:
-    radial-gradient(ellipse at 30% 0%, rgba(61,217,168,0.07) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 100%, rgba(61,217,168,0.04) 0%, transparent 50%);
+    radial-gradient(ellipse 70% 50% at 25% -5%, rgba(61,217,168,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 80% 105%, rgba(61,217,168,0.05) 0%, transparent 55%);
 }
 
-/* Nav */
+/* ── Logo mark ── */
+.nav-icon {
+  width:38px; height:38px; border-radius:11px;
+  overflow:hidden; flex-shrink:0;
+  box-shadow: 0 2px 10px rgba(17,198,138,0.30);
+}
+.nav-icon svg { width:100%; height:100%; display:block; }
+
+/* ── Nav ── */
 nav {
   position: fixed; top:0; left:0; right:0; z-index:100;
-  padding: 20px 32px;
+  padding: 18px 32px;
   display: flex; justify-content: space-between; align-items: center;
   backdrop-filter: blur(20px);
-  background: rgba(13,34,24,0.8);
-  border-bottom: 1px solid rgba(61,217,168,0.08);
+  background: rgba(10,31,22,0.72);
+  border-bottom: 1px solid var(--border);
 }
-.nav-logo {
-  display:flex; align-items:center; gap:12px;
-  text-decoration:none; color:#fff;
-}
-.nav-icon {
-  width:36px; height:36px; background:var(--mint); border-radius:10px;
-  display:flex; align-items:center; justify-content:center;
-  font-family:'Outfit',sans-serif; font-weight:800; font-size:18px; color:#fff;
-}
-.nav-name {
-  font-family:'Outfit',sans-serif; font-weight:700; font-size:20px; color:#fff;
-}
-nav a.nav-link {
-  color: var(--text-dim); text-decoration:none; font-size:14px; font-weight:500;
-  transition: color 0.2s;
-}
-nav a.nav-link:hover { color: var(--mint); }
+.nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff; }
+.nav-name { font-family:'Outfit',sans-serif; font-weight:700; font-size:20px; color:#fff; letter-spacing:-0.3px; }
 .nav-links { display:flex; gap:28px; align-items:center; }
+nav a.nav-link { color: var(--text-dim); text-decoration:none; font-size:14.5px; font-weight:500; transition: color 0.2s; }
+nav a.nav-link:hover { color: var(--mint); }
 
-/* Hero */
+/* ── Hero ── */
 .hero {
+  position:relative; z-index:1;
   min-height: 100vh;
-  display: flex; flex-direction:column;
-  align-items:center; justify-content:center;
-  text-align:center;
-  padding: 120px 24px 80px;
-  position:relative;
+  display: grid; grid-template-columns: 1.05fr 0.95fr; align-items:center; gap:48px;
+  max-width: 1140px; margin:0 auto;
+  padding: 150px 32px 90px;
 }
+.hero-copy { max-width:560px; }
 .hero-eyebrow {
-  font-family:'Outfit',sans-serif;
-  font-size:14px; font-weight:600; letter-spacing:4px;
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'Outfit',sans-serif; font-size:13px; font-weight:600; letter-spacing:2px;
   text-transform:uppercase; color:var(--mint);
-  margin-bottom:28px; opacity:0.8;
+  padding:7px 14px; border:1px solid var(--border); border-radius:100px;
+  background:var(--card); margin-bottom:28px;
 }
 .hero h1 {
   font-family:'Outfit',sans-serif;
-  font-weight:800; font-size:clamp(48px, 8vw, 80px);
-  line-height:1.08; letter-spacing:-2px;
-  color:#fff; max-width:700px;
+  font-weight:800; font-size:clamp(44px, 6.2vw, 72px);
+  line-height:1.05; letter-spacing:-2px; color:#fff;
 }
 .hero h1 span { color:var(--mint); }
-.hero p {
-  margin-top:24px; font-size:20px; line-height:1.6;
-  color:var(--text-dim); max-width:480px;
-}
+.hero p { margin-top:22px; font-size:19px; line-height:1.6; color:var(--text-dim); max-width:440px; }
 .hero-cta {
-  margin-top:44px;
-  display:inline-flex; align-items:center; gap:10px;
+  margin-top:36px; display:inline-flex; align-items:center; gap:10px;
   background:var(--mint); color:var(--forest-deep);
-  font-family:'Outfit',sans-serif; font-weight:700;
-  font-size:17px; padding:16px 36px;
-  border-radius:14px; text-decoration:none;
+  font-family:'Outfit',sans-serif; font-weight:700; font-size:17px;
+  padding:16px 32px; border-radius:14px; text-decoration:none;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 24px rgba(61,217,168,0.25);
 }
-.hero-cta:hover {
-  transform:translateY(-2px);
-  box-shadow: 0 8px 32px rgba(61,217,168,0.35);
-}
+.hero-cta:hover { transform:translateY(-2px); box-shadow: 0 8px 34px rgba(61,217,168,0.38); }
 .hero-cta svg { width:20px; height:20px; }
+.hero-trust { margin-top:20px; font-size:13.5px; color:var(--text-dim); display:flex; align-items:center; gap:8px; }
+.hero-trust b { color:var(--text); font-weight:600; }
 
-/* Features */
-.features {
-  padding: 80px 24px 100px;
-  display:flex; flex-direction:column; align-items:center;
+/* ── Phone / signature ring ── */
+.hero-visual { display:flex; justify-content:center; align-items:center; }
+.phone {
+  width:300px; height:600px; flex-shrink:0;
+  background: linear-gradient(170deg, #133024 0%, #0d251b 100%);
+  border-radius:46px; padding:14px;
+  border:1px solid rgba(61,217,168,0.18);
+  box-shadow: 0 40px 90px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.05);
+  position:relative;
 }
-.features-grid {
-  display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:24px; max-width:900px; width:100%;
+.phone-screen {
+  width:100%; height:100%; border-radius:34px; overflow:hidden;
+  background: linear-gradient(180deg, #d8f2e6 0%, #eaf6ef 42%, #f3f9f5 100%);
+  padding:30px 24px; display:flex; flex-direction:column;
 }
-.feature-card {
-  background: rgba(61,217,168,0.04);
-  border:1px solid rgba(61,217,168,0.08);
-  border-radius:20px; padding:32px 28px;
-  transition: border-color 0.3s, background 0.3s;
+.notch { position:absolute; top:24px; left:50%; transform:translateX(-50%); width:96px; height:26px; background:#0a1f16; border-radius:14px; z-index:3; }
+.scr-greet { font-family:'Outfit',sans-serif; font-weight:700; font-size:15px; color:#1B3A2B; margin-top:6px; }
+.scr-sub { font-size:11.5px; color:#5d8470; margin-top:2px; margin-bottom:18px; }
+.ring-card {
+  background:#fff; border-radius:22px; padding:22px 20px 18px;
+  box-shadow:0 8px 26px rgba(20,80,55,0.10); text-align:center;
 }
-.feature-card:hover {
-  border-color: rgba(61,217,168,0.2);
-  background: rgba(61,217,168,0.07);
-}
-.feature-icon {
-  font-size:28px; margin-bottom:16px;
-}
-.feature-card h3 {
-  font-family:'Outfit',sans-serif;
-  font-weight:700; font-size:19px; color:#fff;
-  margin-bottom:10px;
-}
-.feature-card p {
-  font-size:15px; line-height:1.6; color:var(--text-dim);
-}
+.ring-wrap { position:relative; width:168px; height:168px; margin:2px auto 6px; }
+.ring-wrap svg { transform:rotate(-90deg); }
+.ring-center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.ring-label { font-family:'Outfit',sans-serif; font-size:9.5px; font-weight:700; letter-spacing:1.5px; color:#7aa28d; text-transform:uppercase; }
+.ring-amt { font-family:'Outfit',sans-serif; font-size:34px; font-weight:800; color:#163528; letter-spacing:-1px; line-height:1.1; margin-top:3px; }
+.ring-pill { margin-top:6px; display:inline-flex; align-items:center; gap:5px; font-size:11px; font-weight:600; color:#2d8a5e; background:#e6f5ee; padding:4px 11px; border-radius:100px; }
+.alloc { display:flex; margin-top:18px; border-top:1px solid #eef4f0; padding-top:14px; }
+.alloc div { flex:1; text-align:center; }
+.alloc .k { font-family:'Outfit',sans-serif; font-size:8.5px; font-weight:700; letter-spacing:1px; color:#9bb6a8; text-transform:uppercase; }
+.alloc .v { font-family:'Outfit',sans-serif; font-size:14px; font-weight:700; color:#1f4534; margin-top:3px; }
+.scr-foot { margin-top:auto; display:flex; gap:8px; align-items:center; font-size:11px; color:#5d8470; justify-content:center; }
 
-/* Footer */
-footer {
-  padding:40px 24px;
-  text-align:center;
-  border-top:1px solid rgba(61,217,168,0.06);
+/* ── Features ── */
+.features { position:relative; z-index:1; padding: 40px 24px 90px; display:flex; flex-direction:column; align-items:center; }
+.section-eyebrow { font-family:'Outfit',sans-serif; font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--mint); margin-bottom:14px; }
+.section-title { font-family:'Outfit',sans-serif; font-weight:800; font-size:clamp(28px,4vw,40px); color:#fff; letter-spacing:-1px; text-align:center; margin-bottom:48px; max-width:560px; line-height:1.15; }
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; max-width:920px; width:100%; }
+.feature-card { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:30px 26px; transition: border-color 0.3s, background 0.3s, transform 0.3s; }
+.feature-card:hover { border-color:rgba(61,217,168,0.24); background:rgba(61,217,168,0.075); transform:translateY(-3px); }
+.feature-icon { font-size:26px; margin-bottom:14px; }
+.feature-card h3 { font-family:'Outfit',sans-serif; font-weight:700; font-size:18.5px; color:#fff; margin-bottom:9px; }
+.feature-card p { font-size:14.5px; line-height:1.6; color:var(--text-dim); }
+
+/* ── Privacy strip ── */
+.privacy-strip { position:relative; z-index:1; max-width:920px; margin:0 auto 90px; padding:0 24px; }
+.privacy-inner {
+  background:linear-gradient(135deg, rgba(61,217,168,0.09), rgba(61,217,168,0.03));
+  border:1px solid rgba(61,217,168,0.18); border-radius:26px;
+  padding:48px 44px; display:grid; grid-template-columns:auto 1fr; gap:32px; align-items:center;
 }
-footer p {
-  font-size:13px; color:var(--text-dim); line-height:1.8;
-}
-footer a {
-  color:var(--mint); text-decoration:none;
-}
+.privacy-leaf { width:64px; height:64px; border-radius:18px; overflow:hidden; flex-shrink:0; box-shadow:0 6px 20px rgba(17,198,138,0.32); }
+.privacy-leaf svg { width:100%; height:100%; display:block; }
+.privacy-inner h2 { font-family:'Outfit',sans-serif; font-weight:800; font-size:26px; color:#fff; letter-spacing:-0.5px; margin-bottom:10px; }
+.privacy-inner p { font-size:15.5px; line-height:1.65; color:var(--text-dim); max-width:560px; }
+.privacy-inner a { color:var(--mint); text-decoration:none; font-weight:600; }
+.privacy-inner a:hover { text-decoration:underline; }
+
+/* ── Footer ── */
+footer { position:relative; z-index:1; padding:44px 24px; text-align:center; border-top:1px solid var(--border); }
+footer p { font-size:13px; color:var(--text-dim); line-height:1.8; }
+footer a { color:var(--mint); text-decoration:none; }
 footer a:hover { text-decoration:underline; }
 .footer-links { margin-bottom:12px; }
-.footer-links a { margin:0 12px; }
+.footer-links a { margin:0 12px; font-weight:500; }
 
-/* Animations */
-@keyframes fadeUp {
-  from { opacity:0; transform:translateY(20px); }
-  to { opacity:1; transform:translateY(0); }
-}
+/* ── Motion ── */
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+@keyframes floatPhone { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
+@keyframes drawRing { from { stroke-dashoffset:534; } to { stroke-dashoffset:200; } }
 .hero-eyebrow { animation: fadeUp 0.6s ease both; }
 .hero h1 { animation: fadeUp 0.6s ease 0.1s both; }
 .hero p { animation: fadeUp 0.6s ease 0.2s both; }
 .hero-cta { animation: fadeUp 0.6s ease 0.3s both; }
+.hero-trust { animation: fadeUp 0.6s ease 0.4s both; }
+.hero-visual { animation: fadeUp 0.8s ease 0.3s both; }
+.phone { animation: floatPhone 6s ease-in-out infinite; }
+.ring-progress { animation: drawRing 1.6s cubic-bezier(0.22,1,0.36,1) 0.6s both; }
 
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation:none !important; transition:none !important; }
+  .ring-progress { stroke-dashoffset:200; }
+}
+
+@media (max-width:880px) {
+  .hero { grid-template-columns:1fr; text-align:center; padding-top:120px; gap:56px; }
+  .hero-copy { max-width:none; }
+  .hero p { margin-left:auto; margin-right:auto; }
+  .hero-trust { justify-content:center; }
+  .privacy-inner { grid-template-columns:1fr; text-align:center; justify-items:center; gap:20px; padding:40px 28px; }
+}
 @media (max-width:600px) {
-  nav { padding:16px 20px; }
-  .nav-links { gap:16px; }
+  nav { padding:14px 20px; }
+  .nav-links { gap:18px; }
   .features-grid { grid-template-columns:1fr; }
+  .phone { width:268px; height:536px; }
 }
 </style>
 </head>
@@ -172,8 +199,10 @@ footer a:hover { text-decoration:underline; }
 
 <nav>
   <a href="/" class="nav-logo">
-    <div class="nav-icon">M</div>
-    <div class="nav-name">Mynta</div>
+    <span class="nav-icon">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024"><path fill="#11C68A" d="M0 0L1024 0L1024 1024L0 1024L0 0Z"/><path fill="#FEFEFE" d="M329.111 656.321C309.66 624.096 310.11 567.446 320.035 532.223C366.535 367.197 539.452 278.46 697.254 251.35C715.242 248.26 732.511 246.121 750.374 243.948C752.056 254.006 752.886 264.242 753.824 274.391C755.862 296.423 757.017 318.096 756.651 340.227C755.037 437.725 731.931 528.064 674.7 608.101C664.87 621.848 635.827 658.001 619.121 660.841C615.391 661.475 611.619 660.866 608.585 658.514C597.395 649.838 594.122 621.769 592.754 608.014C584.54 525.361 615.766 404.283 669.073 339.526C677.625 329.137 687.265 317.483 697.917 309.19L697.36 307.62C625.286 356.223 556.504 436.387 510.254 509.44C496.102 532.085 482.911 555.317 470.715 579.072C455.542 531.417 459.931 481.614 474.086 434.388C439.474 460.733 409.308 502.766 391.879 542.317C384.538 558.975 379.101 575.987 372.228 592.646C363.386 614.073 347.206 642.009 329.111 656.321Z"/><path fill="#56D3AF" d="M697.36 307.62C700.496 305.285 702.397 303.997 705.762 302.017C703.078 304.606 700.772 306.803 697.917 309.19L697.36 307.62Z"/><path fill="#FEFEFE" d="M591.341 438.399C591.603 440.597 585.601 454.299 584.298 457.342C555.617 524.327 543.477 628.033 581.718 693.225C570.316 700.378 558.705 706.963 546.527 712.75C494.568 737.439 430.764 743.576 378.704 715.794C373.677 713.112 368.828 710.042 363.824 707.29C359.456 713.635 343.996 728.191 337.588 734.794L312.243 761.039C307.478 765.929 302.54 771.187 297.401 775.643C293.365 779.142 289.776 781.058 284.212 780.382C280.229 779.894 276.625 777.781 274.253 774.545C271.687 771.036 270.65 766.639 271.377 762.354C272.494 755.468 276.609 752.66 281.75 748.998C290.454 742.854 299.766 735.331 308.077 728.804C350.714 695.318 387.348 658.176 404.73 605.649C412.17 583.166 419.096 556.13 430.483 535.408C430.498 542.1 430.808 548.788 431.415 555.452C433.464 577.711 442.238 609.984 459.145 625.801C475.974 641.544 489.816 611.017 496.351 599.668C504.659 585.169 512.753 570.548 520.631 555.811C532.873 533.134 545.906 511.097 558.902 488.849C568.856 471.81 579.608 454.298 591.341 438.399Z"/></svg>
+    </span>
+    <span class="nav-name">Mynta</span>
   </a>
   <div class="nav-links">
     <a href="/privacy" class="nav-link">Privacy</a>
@@ -182,46 +211,93 @@ footer a:hover { text-decoration:underline; }
 </nav>
 
 <section class="hero">
-  <div class="hero-eyebrow">Personal Finance App</div>
-  <h1>Clarity over<br>your <span>money</span></h1>
-  <p>Track expenses in seconds. No bank linking, no data collection, no ads. Just fast, private budgeting.</p>
-  <a href="https://apps.apple.com/app/mynta" class="hero-cta">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    Download on the App Store
-  </a>
+  <div class="hero-copy">
+    <div class="hero-eyebrow">🌿 Personal finance, made calm</div>
+    <h1>Clarity over<br>your <span>money</span></h1>
+    <p>Log a spend in seconds. See where every dollar goes. No bank linking, no data selling, no ads — just private, friction-free budgeting.</p>
+    <a href="https://apps.apple.com/app/mynta" class="hero-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download on the App Store
+    </a>
+    <div class="hero-trust"><b>Free.</b> Everything stays on your phone.</div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="phone-screen">
+        <div class="scr-greet">Good evening, Leon</div>
+        <div class="scr-sub">Here's your month at a glance</div>
+        <div class="ring-card">
+          <div class="ring-wrap">
+            <svg width="168" height="168" viewBox="0 0 168 168">
+              <circle cx="84" cy="84" r="68" fill="none" stroke="#eaf3ee" stroke-width="14"/>
+              <circle class="ring-progress" cx="84" cy="84" r="68" fill="none" stroke="#3DD9A8" stroke-width="14"
+                stroke-linecap="round" stroke-dasharray="427 534" stroke-dashoffset="200"/>
+            </svg>
+            <div class="ring-center">
+              <span class="ring-label">Left to spend</span>
+              <span class="ring-amt">$1,840</span>
+              <span class="ring-pill">🌿 On track</span>
+            </div>
+          </div>
+          <div class="alloc">
+            <div><div class="k">Earned</div><div class="v">$4,200</div></div>
+            <div><div class="k">Saved</div><div class="v">$900</div></div>
+            <div><div class="k">Spent</div><div class="v">$1,460</div></div>
+          </div>
+        </div>
+        <div class="scr-foot">🔒 Stored only on this device</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="features">
+  <div class="section-eyebrow">What you get</div>
+  <h2 class="section-title">A finance buddy that never judges you</h2>
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">⚡</div>
       <h3>Log in seconds</h3>
-      <p>Tap a group, tap a tag, done. Auto-save means fewer buttons and faster logging.</p>
+      <p>Tap a category, type an amount, done. Auto-save means fewer buttons and faster logging.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📊</div>
       <h3>See where it goes</h3>
-      <p>Color-coded budgets, spending pace, and a clear breakdown of every dollar, in real time.</p>
+      <p>Color-coded budgets, spending pace, and a clear breakdown of every dollar — in real time.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🎯</div>
       <h3>Save for what matters</h3>
-      <p>Set savings goals, track progress, and pay yourself first. Wedding, house, holiday. You name it.</p>
+      <p>Set savings goals, track progress, and pay yourself first. Wedding, house, holiday — you name it.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon">🔒</div>
-      <h3>Your data, your device</h3>
-      <p>No bank linking. No servers. No selling data. Everything stays on your phone. Period.</p>
+      <div class="feature-icon">🌱</div>
+      <h3>No shame, ever</h3>
+      <p>Gentle, plain-English insight instead of red alerts. Mynta nudges, it never nags.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🔍</div>
       <h3>Find anything</h3>
-      <p>Search and filter by group, tag, date, or amount. Stack filters for pinpoint results.</p>
+      <p>Search and filter by group, category, date, or amount. Stack filters for pinpoint results.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🔄</div>
       <h3>Set it and forget it</h3>
       <p>Recurring transactions handle rent, subscriptions, and salary automatically.</p>
+    </div>
+  </div>
+</section>
+
+<section class="privacy-strip">
+  <div class="privacy-inner">
+    <div class="privacy-leaf">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024"><path fill="#11C68A" d="M0 0L1024 0L1024 1024L0 1024L0 0Z"/><path fill="#FEFEFE" d="M329.111 656.321C309.66 624.096 310.11 567.446 320.035 532.223C366.535 367.197 539.452 278.46 697.254 251.35C715.242 248.26 732.511 246.121 750.374 243.948C752.056 254.006 752.886 264.242 753.824 274.391C755.862 296.423 757.017 318.096 756.651 340.227C755.037 437.725 731.931 528.064 674.7 608.101C664.87 621.848 635.827 658.001 619.121 660.841C615.391 661.475 611.619 660.866 608.585 658.514C597.395 649.838 594.122 621.769 592.754 608.014C584.54 525.361 615.766 404.283 669.073 339.526C677.625 329.137 687.265 317.483 697.917 309.19L697.36 307.62C625.286 356.223 556.504 436.387 510.254 509.44C496.102 532.085 482.911 555.317 470.715 579.072C455.542 531.417 459.931 481.614 474.086 434.388C439.474 460.733 409.308 502.766 391.879 542.317C384.538 558.975 379.101 575.987 372.228 592.646C363.386 614.073 347.206 642.009 329.111 656.321Z"/><path fill="#56D3AF" d="M697.36 307.62C700.496 305.285 702.397 303.997 705.762 302.017C703.078 304.606 700.772 306.803 697.917 309.19L697.36 307.62Z"/><path fill="#FEFEFE" d="M591.341 438.399C591.603 440.597 585.601 454.299 584.298 457.342C555.617 524.327 543.477 628.033 581.718 693.225C570.316 700.378 558.705 706.963 546.527 712.75C494.568 737.439 430.764 743.576 378.704 715.794C373.677 713.112 368.828 710.042 363.824 707.29C359.456 713.635 343.996 728.191 337.588 734.794L312.243 761.039C307.478 765.929 302.54 771.187 297.401 775.643C293.365 779.142 289.776 781.058 284.212 780.382C280.229 779.894 276.625 777.781 274.253 774.545C271.687 771.036 270.65 766.639 271.377 762.354C272.494 755.468 276.609 752.66 281.75 748.998C290.454 742.854 299.766 735.331 308.077 728.804C350.714 695.318 387.348 658.176 404.73 605.649C412.17 583.166 419.096 556.13 430.483 535.408C430.498 542.1 430.808 548.788 431.415 555.452C433.464 577.711 442.238 609.984 459.145 625.801C475.974 641.544 489.816 611.017 496.351 599.668C504.659 585.169 512.753 570.548 520.631 555.811C532.873 533.134 545.906 511.097 558.902 488.849C568.856 471.81 579.608 454.298 591.341 438.399Z"/></svg>
+    </div>
+    <div>
+      <h2>Your data, your device</h2>
+      <p>No bank linking. Your transactions, budgets, and goals never leave your phone — we have no server that can see them. We use anonymous analytics to improve the app, and we never sell your data. <a href="/privacy">Read the full privacy policy →</a></p>
     </div>
   </div>
 </section>
